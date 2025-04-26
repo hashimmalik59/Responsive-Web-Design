@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Landing Page</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Poppins, sans-serif;
+    }
+
+    .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .container button {
+        border: none;
+        border-radius: 5px;
+        background-color: #386DE4;
+        color: #fff;
+        height: 10%;
+        width: 15%;
+        font-size: 1em;
+    }
+
+    .container h1,
+    p,
+    button {
+        margin: 10px 0;
+    }
+
+    @media screen and (max-width: 576px) {
+        .container {
+            font-size: 1.1em;
+        }
+
+        .container button {
+            width: 60%;
+        }
+
+        .container h1,
+        p,
+        button {
+            margin: 0 10px;
+        }
+    }
+
+    @media screen and (min-width: 577px) and (max-width: 992) {
+        .container {
+            font-size: 20em;
+        }
+
+        .container h1,
+        p,
+        button {
+            margin: 0 10px;
+        }
+
+        .container button {
+            width: 80%;
+            height: 20%;
+            padding: 2% 5%;
+        }
+    }
+
+    @media screen and (min-width: 993px) {
+        .container {
+            font-size: 1.5em;
+        }
+
+        .container button {
+            width: 15%;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Our Site</h1>
+        <p>
+            We are launching something amazing<br />
+            soon. Stay tuned!
+        </p>
+        <button>Learn More</button>
+    </div>
+</body>
+
+</html>
