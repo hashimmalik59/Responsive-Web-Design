@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background-color: #404244;
+    color: #fff;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0 10px;
+    padding: 0 10px;
+    font-size: 1.25em;
+}
+
+header h1 {
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+main {
+    width: initial;
+    height: 70vh;
+    display: flex;
+}
+
+aside {
+    font-size: 1.5em;
+    color: #404244;
+    border: .5px solid #404244;
+}
+
+.firstAside {
+    border-right: 1px solid #404244;
+    width: 70%;
+}
+
+.secondAside {
+    width: 30%;
+    font-size: 1.25em;
+}
+
+.firstAside h1,
+p,
+a {
+    margin: 10px;
+}
+
+.secondAside h1,
+p,
+a {
+    margin: 10px;
+}
+
+footer {
+    background-color: #404244;
+    color: #fff;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25em;
+    border-radius: 0px 0px 5px 5px;
+    position: absolute;
+    bottom: 0px;
+    width: inherit;
+}
+
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 5px 0;
+        font-size: .75em;
+        border-radius: 0;
+    }
+
+    footer {
+        font-size: .75em;
+        height: 10vh;
+        border-radius: 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .firstAside,
+    .secondAside {
+        width: 100%;
+        text-align: justify;
+        font-size: .75em;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        width: 90%;
+    }
+
+    header {
+        /* height: auto; */
+        text-align: center;
+        padding: 5px 0;
+        font-size: .75em;
+    }
+
+    footer {
+        font-size: .75em;
+        height: 10vh;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .firstAside,
+    .secondAside {
+        width: 100%;
+        height: 50vh;
+        text-align: justify;
+        font-size: .75em;
+    }
+}
+
+@media (max-width: 1025px) {}
